@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./material-design-icons/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(./material-design-icons/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+      url(./material-design-icons/fonts/MaterialIcons-Regular.woff) format('woff'),
+      url(./material-design-icons/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav.custom.navbar.navbar-expand-sm.navbar-light {
+    border-bottom: 1px solid #f3f4f4;
+    padding: 13px 40px 13px 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.custom.nav-link.logo {
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    color: #000000 !important;
+    font-size: 22px;
+}
+
+.custom.nav-link.logo:hover {
+    color: #9696E7 !important;
+}
+
+.custom a.sign-in {
+    margin: 3px 10px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6e6d7a;
+}
+
+a.sign-up{
+    background-color: #9696e7;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+}
+
+.container.signed-out-masthead {
+    background-image: url("./img/uaMqCd-1.jpg");
+    max-width: 100%;
+    background-size: cover;
+}
+
+.signed-out-masthead-short-disc.col-sm-6 {
+    margin: 150px 0 95px 58px;
+}
+
+
+.container.signed-out-masthead p.slogan {
+    font-size: 48px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.container.signed-out-masthead p.discription {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.container.main-content {
+    min-width: 100%;
+    margin: 0;
+    padding: 25px 73px;
+}
+
+.custom.navbar.navbar-expand-md {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.custom .btn.saved {
+    border: 1px solid #e1e1e1;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    padding: 10px;
+}
+
+.custom .btn.filters {
+    border: 1px solid #e1e1e1;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    padding: 10px;
+}
+
+.custom i.material-icons.add_box {
+    margin-left: 10px;
+}
+
+.material-icons.filter_list {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.custom-cards.row {
+    margin-top: 28px;
+}
+
+.custom.card {
+    height: 200px;
+    overflow: hidden;
+    border: none !important;
+}
+
+.custom .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.custom i.material-icons.collections {
+    font-size: 32px;
+    color: #ffffff;
+    float: right;
+    padding: 10px;
+    text-shadow: 1px 2px 1px #00000085;
+}
+
+.custom .material-icons.favorite {
+    margin-left: 9px;
+    font-size: 20px;
+}
+
+.card-short-info.row {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.overlay-content {
+    opacity: 0;
+    display: flex;
+    height: 74%;
+    width: 100%;
+    padding: 0 15px 20px 15px;
+    color: #ffffff;
+    background: linear-gradient(to top, rgb(0 0 0 / 86%), rgba(0, 0, 0, 0));
+    justify-content: space-between;
+    transition: .5s ease;
+}
+
+.overlay-content p.card-title {
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom .card-icons {
+    width: 100px;
+    display: flex;
+}
+
+.custom .overlay-content p.card-title, .card-icons {
+    align-self: flex-end;
+}
+
+.custom .card-icons a.btn.btn-light.material-icons {
+    font-size: 21px;
+    padding: 5px;
+}
+
+.hide-icon {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.card-img-overlay:hover .hide-icon {
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.card-img-overlay:hover .overlay-content {
+    opacity: 1;
+    height: 74%;
+    transition: .5s ease;
+}
+
+.avatar-name {
+    display: flex;
+    padding: 0;
+}
+
+p.diplay-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    padding-top: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    padding-right: 3px;
+}
+
+.short-info-icons {
+    padding: 6px 0 0 0;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    color: #6b6b72;
+}
+span.material-icons.textsms {
+    font-size: 19px;
+}
+
+span.material-icons.favorite {
+    font-size: 17px;
+}
+/*-------------------------------------------- Sign In / Sign Up --------------------------------------------*/
+.custom-link a {
+    color: #E60023;
+}
+
+p.custom-link {
+    margin: 10px 0 0 5px;
+}
+
+.already-member {
+    margin: 15px 5px 0 0;
+}
+
+.already-member p {
+    text-align: right;
+}
+
+.already-member p a {
+    text-decoration: none;
+}
+
+.custom.form-container h3 {
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+.custom.form-container {
+    margin: 35px 142px 0 156px;
+}
+
+.custom button.btn.btn-light {
+    padding: 10px 25px 0 25px;
+    margin: 0 20px 0 0;
+}
+
+.custom button.btn.btn-light p {
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+}
+
+.custom-form .fab {
+    margin-right: 10px;
+}
+
+.register-options {
+    display: flex;
+}
+
+span.or {
+    display: flex;
+    color: #6e6d7a;
+    margin: 35px 0 35px 0;
+}
+
+.register-options a.btn.btn-primary.btn-block {
+    margin-right: 10px;
+    font-weight: 500;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-form i.fab.fa-instagram {
+    font-size: 24px;
+    margin: 0;
+}
+
+.custom-form a.btn.btn-primary.instagram {
+    background-color: #bfa1e44d;
+    color: #6e6d7a;
+    border: none;
+    padding: 10px 15px;
+}
+
+.custom-form a.btn.btn-primary.instagram:hover {
+    background-color: #d4cedbcf;
+}
+
+.activate-form.is-active {
+    box-shadow: 0 0 0 0.2rem rgb(188 150 231 / 51%);
+}
+
+form.custom-form {
+    display: none;
+}
+
+form.custom-form.is-active {
+    display: block;
+    margin-top: 35px;
+}
+
+.custom-form label {
+    font-weight: 600;
+    width: 100%;
+    margin: 0;
+}
+
+.custom-form label.terms {
+    margin: 0;
+    font-weight: 500;
+}
+
+.custom-form label.terms a {
+    text-decoration: none;
+}
+.form-control:hover {
+    border: solid 1px #b187d478;
+    box-shadow: 0 0 0 0.2rem rgb(188 150 231 / 26%);
+}
+
+.custom-form button.btn.btn-primary {
+    padding: 10px 30px 10px 30px;
+    background-color: #9800ffd4;
+    border: none;
+    margin-top: 15px;
+}
+
+/* -----------------------Sign In----------------------- */
+a.forgot-pw {
+    float: right;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.custom-form button.btn.btn-primary.signin-btn {
+    padding: 10px 65px 10px 65px;
+}
+/*-------------------- Bussiness Profile --------------------*/
+a.btn.profile-icon {
+    padding: 0;
+    margin-right: 15px;
+}
+
+.custom a.btn.upload-btn {
+    padding: 12px 20px 0 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #9696e7;
+}
+
+/*---------------------------------- Bussiness Profile ----------------------------------*/
+.company-logo img {
+    width: 125px;
+    border: solid 7px #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 15%);
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 15%);
+}
+
+.client-avatar img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+span.block-num {
+    font-weight: 600;
+    float: right;
+}
+/*------------------------------------ Chat Box ------------------------------------*/
+.chatbox {
+    position: fixed;
+    border-radius: 5px 5px 0 0;
+    z-index: 10000;
+    width: 325px;
+    bottom: -30px;
+    right: 30px;
+}
+
+.chatbox .card-header {
+    color: #303030;
+    border-bottom: solid 1px #8b8b8b4d;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 10px 5px 10px;
+}
+
+.chatbox .card-header span.icons {
+    float: right;
+    color: #BEC2C9;
+}
+
+.chatbox .card-header .icons i.material-icons {
+    font-size: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.chatbox .card-body {
+    padding: 0 5px 0 5px;
+    overflow-y: auto;
+    height: 300px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5em;
+}
+
+.chatbox .card-footer {
+    border-top: solid 1px #8b8b8b4d !important;
+    margin: 0 !important;
+}
+
+.form-group.type-area {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.type-area textarea {
+    width: 300px;
+    border: none !important;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+.type-area .form-control:hover {
+    box-shadow: none;
+}
+
+.type-area button.btn.btn-link {
+    padding: 0;
+    margin: 0;
+}
+
+.hide-chatbox {
+    display: none;
+}
+
+.chatbox.maximize {
+    width: 800px;
+    height: 527px;
+}
+
+.chatbox.minimize {
+    height: 40px;
+}
+
+.chatbox.maximize textarea {
+    width: 775px;
+}
+
+.chatbox.maximize .send {
+    margin-top: 60px;
+}
+
+.minimize .maximize-chatbox {
+    display: none;
+}
+.chatbox.minimize .card-header.minimize-chatbox {
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    color: #ffffff;
+}
+
+.chatbox.minimize .close-chatbox {
+    color: #ffffff;
+}
+
+.chatbox img.sender-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.chatbox span.sender-message-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chatbox p.sender-message {
+    background-color: #F1F0F0;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 0 0 0 5px;
+    width: 75%;
+}
+
+.chatbox p.your-message {
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    color: #ffffff;
+    padding:  5px 5px 5px 5px;
+    float: right;
+    border-radius: 5px;
+    width: 87%;
+    margin-top: 15px;
+}
+
+/*----------------------------- Post Page -----------------------------*/
+
+.crop-container {
+    display: none;
+}
+.crop-container.crop-style {
+    display: block;
+}
+.crop-style .output-container {
+    display: flex;
+}
+.post .card {
+    overflow: hidden;
+}
+
+.post h3.title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.post p.discription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 51px;margin: 0;
+}
+
+.post .categories {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post .incharge img {
+    width: 38px;
+    border-radius: 50px;
+}
+
+.post .actions button {
+    margin: 0;
+}
+
+.post .card-footer.actions {
+    margin: 0;
+    padding: 4px 0 0 0;
+}
+
+.post button.delete {
+    padding: 7px;
+    border: solid 1px #00000036;
+    margin-left: 5px;
+}
+
+.post .categories button {
+    padding: 0 4px 0 4px;
+    font-size: 10px;
+    background-color: #cecece29;
+    border: solid 1px #aeaeae66;
+    color: #3a3a3ab3;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.post .card .card-body {
+    padding: 7px 7px 7px 7px;
+}

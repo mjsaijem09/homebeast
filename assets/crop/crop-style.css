@@ -1,0 +1,179 @@
+.crop-style {
+  display: none;
+}
+.layout {
+  height: 100%;
+}
+.layout * {
+  box-sizing: border-box;
+}
+.layout body {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #111;
+}
+.layout h1 {
+  font-family: Lobster, Arial;
+  text-align: center;
+}
+.layout .btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 999;
+  padding: 6px 10px;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c92437), to(#9e1c2b));
+  background-image: linear-gradient(to bottom, #c92437 0%, #9e1c2b 100%);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.crop-style .ic-container {
+  position: relative;
+}
+.ic-overlay-n,
+.ic-overlay-e,
+.ic-overlay-s,
+.ic-overlay-w {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.7;
+}
+.crop-style .ic-overlay-n {
+  top: 0;
+}
+.crop-style .ic-overlay-e {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.crop-style .ic-overlay-s {
+  bottom: 0;
+}
+.crop-style .ic-overlay-w {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.ic-resize-handle-ne,
+.ic-resize-handle-se,
+.ic-resize-handle-nw,
+.ic-resize-handle-sw {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #9C27B1;
+  z-index: 999;
+}
+.crop-style .ic-resize-handle-nw {
+  top: -5px;
+  left: -5px;
+  cursor: nw-resize;
+}
+.crop-style .ic-resize-handle-sw {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+.crop-style .ic-resize-handle-ne {
+  top: -5px;
+  right: -5px;
+  cursor: ne-resize;
+}
+.crop-style .ic-resize-handle-se {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}
+.crop-style .ic-crop-marker {
+  position: absolute;
+  z-index: 999;
+  border: solid 2px #9c27b057;
+  cursor: move;
+}
+.crop-style .ic-move-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.crop-style .ic-container img {
+  display: block;
+  max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+.crop-style section {
+  height: 100%;
+}
+.crop-style .hidden {
+  display: none;
+}
+.crop-style .drop {
+  position: relative;
+  width: 210px;
+  height: 160px;
+  margin-left: 10px;
+  font-family: Lobster, Arial, serif;
+  font-size: 16px;
+  color: #333333ab;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(51, 51, 51, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  transition-properties: border;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.drop.dragging,
+.drop:hover {
+  border-color: #9c27b0;
+}
+.drop p {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -19px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.crop-style .image-resize {
+  max-width: 647px;
+  margin: auto;
+}
+.crop-style .btn {
+  margin-top: 20px;
+  padding: 8px 25px;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c92437), to(#9e1c2b));
+  background-image: linear-gradient(to bottom, #c92437 0%, #9e1c2b 100%);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.btn .fa:first-child {
+  margin-right: 5px;
+}
+.thumbnail {
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+.thumbnail img {
+  display: block;
+  border-radius: 5px;
+}

@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <title>Sign In | Homebeasts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/beast-favicon.png" type="image/gif">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="material-icons/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <link href="./fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+      .custom.col-md-5 {
+          padding: 0;
+      }
+      .custom.row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .custom .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        padding: 0 4px;
+      }
+      
+      .custom .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .custom .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .custom .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="custom col-md-5">
+          <!-- Photo Grid -->
+          <div class="custom row"> 
+            <div class="column">
+                <a href="https://www.pinterest.ph/pin/405112928984965946/">
+                  <img src="https://i.pinimg.com/564x/33/69/c2/3369c2b0d797b74f08f9b5bcbac42ee9.jpg">
+                </a>
+                <a href="https://www.pinterest.ph/pin/542613455108163619/">
+                  <img src="https://i.pinimg.com/564x/1e/5e/08/1e5e08766652a788491989bc099db527.jpg">
+                </a>
+                <a href="https://www.pinterest.ph/pin/354236326944852759/">
+                  <img src="https://i.pinimg.com/564x/f7/7d/11/f77d112de4ce4e578c41e8e4a63b34c9.jpg">
+                </a>
+            </div>
+            <div class="column">
+              <a href="https://www.pinterest.ph/pin/16255248644559888/">
+                <img src="https://i.pinimg.com/564x/53/ac/d4/53acd4c6a1b53f4623047b8276ffdc4d.jpg">
+              </a>
+              <a href="https://www.pinterest.ph/pin/84653667983860880/">
+                <img src="https://i.pinimg.com/564x/ee/5f/5d/ee5f5daae95073c410a7fbd691f634d4.jpg">
+              </a>
+              <a href="https://www.pinterest.ph/pin/207376757824386880/">
+                <img src="https://i.pinimg.com/564x/e3/ac/de/e3acde02e2f5dc8d82c35ac0d2675a97.jpg">
+              </a>
+          </div>
+          <div class="column">
+            <a href="https://www.pinterest.ph/pin/444449056970897175/">
+              <img src="https://i.pinimg.com/564x/73/15/30/7315305603c7e7a3bc276059011edbf8.jpg">
+            </a>
+            <a href="https://www.pinterest.ph/pin/149252175140926506/">
+              <img src="https://i.pinimg.com/564x/c7/3e/75/c73e7501132d52b791eb9879f7ffec18.jpg">
+            </a>
+            <a href="https://www.pinterest.ph/pin/51298883242188923/">
+              <img src="https://i.pinimg.com/564x/aa/86/c6/aa86c65d288ceccca1a8e2ca29c77086.jpg">
+            </a>
+        </div>
+          </div>
+          <p class="custom-link">This images are from <a href="https://www.pinterest.com/">pinterest</a></p>
+        </div>
+        <div class="col-md-7">
+          <div class="already-member">
+            <p>Not a member? <a href="/signup">Sign Up</a></p>
+          </div>
+            <div class="custom form-container">
+              <h3>Sign in to Homebeasts</h3>
+                <button type="button" data-target="#normal-user-form" class="btn btn-light activate-form is-active">
+                  <img src="./img/icons8-charlie-chaplin-64.png" alt="">
+                  <p>Searching</p>
+                </button>
+                <button type="button" data-target="#bussiness-user-form" class="btn btn-light activate-form">
+                  <img src="./img/icons8-business-64.png" alt="">
+                  <p>Bussiness</p>
+                </button>
+
+              <form id="normal-user-form" class="custom-form is-active">
+
+                <div class="register-options">
+                  <a class="btn btn-primary btn-block" href="#" role="button"><i class="fab fa-facebook-f"></i>Sign in with Facebook</a>
+                  <a class="btn btn-primary instagram" href="#" role="button"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <span class="or"><hr style="width: 100%; margin-top: 11px;margin-right: 10px;">Or<hr style="width: 100%; margin-top: 11px;margin-left: 10px;"></span>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Username or Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password<a href="#" class="forgot-pw">Forgor password?</a></label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                <button type="submit" class="btn btn-primary signin-btn">Sign In</button>
+
+              </form>
+
+              <form id="bussiness-user-form" class="custom-form">
+                
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Username or Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password<a href="#" class="forgot-pw">Forgor password?</a></label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                <button type="submit" class="btn btn-primary signin-btn">Sign In</button>
+
+              </form>
+            </div>
+        </div>
+    </div>
+<script>
+  jQuery(($) => {
+
+    const $actForms = $(".custom-form");
+    const $actFormsBtns = $(".activate-form");
+
+    $actFormsBtns.on("click", function() {
+      $actFormsBtns.add($actForms).removeClass("is-active");
+      $(this).add($(this.dataset.target)).addClass("is-active");
+    });
+  });
+</script>
+</body>
+</html>
